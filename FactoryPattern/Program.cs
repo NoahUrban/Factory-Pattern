@@ -4,7 +4,15 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
+            Console.WriteLine("Please enter the number of wheels you would like");
+
+            string userInput = Console.ReadLine();
+
+            IVehicle vehicle = VehicleFactory.GetVehicle(userInput);
+
+            Console.WriteLine();
+            vehicle.Drive();
         }
     }
 }
