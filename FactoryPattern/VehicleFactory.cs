@@ -6,21 +6,16 @@ public class VehicleFactory
 	{
 	}
 
-	Motorcycle instance1 = new Motorcycle();
-	Trike instance2 = new Trike();
-	Car instance3 = new Car();
-	SemiTruck instance4 = new SemiTruck();
-
-	public static IVehicle GetVehicle(string wheels)
+	public static IVehicle GetVehicle(int wheels)
 	{
 
 		switch(wheels)
 		{
-			case "2":
+			case 2:
 				return new Motorcycle();
-            case "3":
+            case 3:
                 return new Trike();
-            case "4":
+            case 4:
                 return new Car();
 			default:
 				return new SemiTruck();

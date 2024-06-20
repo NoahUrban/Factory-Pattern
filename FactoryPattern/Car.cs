@@ -11,7 +11,7 @@ public class Car : IVehicle
 
     public void Drive()
     {
-        Console.WriteLine($"Motorcycle\n" +
+        Console.WriteLine($"Car\n" +
             $"Price: ${price}\n" +
             $"Tow Capacity: {towCapacity} pounds");
     }

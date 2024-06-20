@@ -11,7 +11,7 @@ public class Trike : IVehicle
       
     public void Drive()  
     {
-        Console.WriteLine($"Truck\n" +
+        Console.WriteLine($"Trike\n" +
             $"Price: ${price}\n" +
             $"Engine Sound: {engineSound}");
     }

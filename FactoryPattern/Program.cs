@@ -7,7 +7,7 @@
 
             Console.WriteLine("Please enter the number of wheels you would like");
 
-            string userInput = Console.ReadLine();
+            int userInput = int.Parse(Console.ReadLine());
 
             IVehicle vehicle = VehicleFactory.GetVehicle(userInput);
 
